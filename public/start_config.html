@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كلاسمت ClassMate קלאסמיייט</title>
+    <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/question.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+
+      <div class="demo">
+        <h2>
+          <span class="text_Hello"></span>&nbsp<span id="text_name"></span>
+          <span class="text_a_pleasure_to_meet_you"
+            >text_a_pleasure_to_meet_you</span
+          ><span>!</span>
+        </h2>
+        <p class="text_a_number_short_questions">
+          text_a_number_short_questions
+        </p>
+        <div class="question">
+          <p class="text_question_s_langs">באילו שפות תרצו ללמוד וללמד?</p>
+          <ul id="config_question_s_langs"></ul>
+        </div>
+        <div class="question">
+          <p class="text_question_refer">איך לפנות אליך?</p>
+          <ul id="config_question_gender"></ul>
+        </div>
+        <br />
+        <button onclick="nextPage()" type="button">עבור למסך הבא</button>
+        <button onclick="location.href='./sign_in.html'" type="button">
+          עבור למסך הקודם
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="start_config.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+/* SIGN IN CSS */
+
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.hdn {
+  display: none;
+}
+.form {
+  margin: auto;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: var(--bg-color-1);
+}
+.form.signup {
+  display: none;
+  pointer-events: none;
+}
+.forms.show-signup .form.signup {
+  display: block;
+  pointer-events: auto;
+}
+.forms.show-signup .form.login {
+  display: none;
+  pointer-events: none;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--font-color);
+  text-align: center;
+}
+form {
+  margin-top: 30px;
+}
+
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.field input,
+.field button,
+button.field {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+.eye-icon {
+  position: absolute;
+  text-align: end;
+  top: 10px;
+  font-size: 18px;
+  color: #8b8b8b;
+  cursor: pointer;
+  padding: 5px;
+}
+.eye-icon:dir(rtl) {
+  left: 5px;
+}
+.eye-icon:dir(ltr) {
+  right: 5px;
+}
+.field button {
+  color: var(--font-color-2);
+  background-color: var(--bg-color-2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+}
+.field button:hover {
+  background-color: var(--bg-color-3);
+}
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+.form-link span,
+.form-link span a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #232836;
+}
+.form a {
+  color: var(--font-color-1a);
+  text-decoration: none;
+}
+.form-content a:hover {
+  text-decoration: underline;
+}
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: var(--bg-color-shadow);
+}
+.line:dir(ltr)::before {
+  content: "Or";
+}
+.line:dir(rtl)::before {
+  content: "או";
+}
+.line::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color-1);
+  color: var(--font-color-1a);
+  padding: 0 15px;
+}
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color-2);
+  background-color: var(--bg-color-2);
+  box-shadow: rgba(7, 19, 13, 0.675) 8.18932px 9.25242px 21.4781px 0.531553px;
+}
+
+.media-options:hover a {
+  background-color: var(--bg-color-3);
+  color: var(--font-color-0);
+}
+
+img.google-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+img.google-img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+}
+a.google {
+  border: 1px solid var(--border-color);
+}
+a.google span {
+  font-weight: 500;
+  color: var(--font-color-2);
+}
+a.google:hover span {
+  color: var(--font-color-0);
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    padding: 20px 10px;
+  }
+}

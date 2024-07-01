@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+ }
+ body {
+    direction: rtl;
+    background-color: var(--bg-color-1);
+ }
+.container {
+    margin: auto;
+    height: 100vh;
+    width:100%;  
+    background-color: var(--bg-color-1);
+    /* color:var(--font-color-1); */
+    
+ }
+
+ button {
+   width:10rem;
+   height: 4rem;
+   padding: 0.6rem;
+   margin: 0.5rem;
+   border-radius: 0.4rem;
+   font-size:1.3rem;
+   background-color: var(--bg-color-3);
+   color: var(--font-color-1);
+   border: 2px outset var(--font-color-1);
+}
+
+button:hover {
+   background-color: var(--bg-color-4);  
+   /* color: var(--font-color-3); */
+   font-weight: bold;
+   box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+   -webkit-box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+   -moz-box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+}
+
+
+ .demo {
+   padding-top: 2rem;
+   text-align: center;
+   
+ }
+ .demo img {
+   max-width: 100%;
+   max-height: 300px;
+ }
+ .demo p {
+    margin-top: 2rem;
+    color: var(--font-color-0);
+    font-size: larger;
+    font-weight: bolder;
+ }
+
+ .demo button {
+    
+    width:18rem;
+    
+    
+ } 
+
+
+
+div.scroll-container {
+    background-color: var(--bg-color-3);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+
+
+ .user_input * {
+  font-size: larger;
+  margin: 0.5rem;
+  padding: 0.5rem;
+ }
+ .user_input label {
+  font-style: oblique;
+  color:var(--font-color-0);
+ }
+
+ 
+
+  /* start.html */
+
+  #search_teacher_div {
+    display: block;
+  }
+  #search_teacher_div > *,  #search_teacher_div  * {
+    font-size: 1.5rem;
+    color:var(--font-color);
+  }
+
+  #search_teacher_div label,#search_teacher_div label>*  {
+    color:var(--font-color-2);
+    background-color: var(--bg-color-2);
+  }
+
+  #search_teacher_div {
+    width: 550px;
+    margin: auto;
+    padding: 10px;
+  }
+  #search_teacher_div h1 * ,
+  #search_teacher_div h1 
+  {
+    color: var(--font-color-1);
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  #search_teacher_div ,#search_teacher_div form  {
+    margin-bottom: 10px;
+  }
+  #search_teacher_div *{
+   
+    text-align: center;
+    font-weight: normal;
+  }
+  #search_teacher_div .line {
+    display: flex;
+    flex-direction: row;
+    margin: 5px auto;
+    padding: 0;
+   
+  }
+  
+  #search_teacher_div .line.fx  input,
+  #search_teacher_div .line.fx  select{
+   
+   width: 450px;
+  }
+  #search_teacher_div .line div  label>span{
+    width: 100px;
+  }
+  #search_teacher_div   label  {
+    text-align: center;
+  }
+  #search_teacher_div .line.fx label{
+    display: flex;
+    flex-direction: column;
+    width:100px; 
+
+  }
+  #search_teacher_div .line:not(.fx) div {
+    text-align: center ;
+    display: flex;
+    flex-direction: row;
+   
+  
+    
+  }
+  #search_teacher_div .line:not(.fx) div>label {
+    
+    display: flex;
+    flex-direction: row;
+    width:100px; 
+    
+  }
+ 
+  #search_teacher_div button {
+    width: 100%;
+    margin: 0;
+    background-color: var(--bg-color-2);
+    
+    /* opacity: 0.6; */
+  }
+  #search_teacher_div button > span {
+    color: var(--font-color-2);
+  }
+  #search_teacher_div button:hover {
+    /* opacity: 1; */
+    filter:brightness(120%)
+  }
+
+  @media screen and (max-width:500px) {
+    #search_teacher_div {
+      width: 100%;
+      padding: 20px;
+    }
+    #search_teacher_div .line,
+    #search_teacher_div .line:not(.fx) div {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    #search_teacher_div .line.fx  input,
+    #search_teacher_div .line div input{
+      padding: 0;
+      margin: auto;
+      width: 100%;
+     }
+     #search_teacher_div .line.fx label,
+     #search_teacher_div .line:not(.fx) div>label{
+      
+      width: 100%; 
+  
+    }
+    #search_teacher_div .line.fx label>*,
+    #search_teacher_div .line:not(.fx) div>label>*{
+      margin: auto;
+      width: 100%;
+      text-align: start;
+    }
+    #search_teacher_div  label {
+      color:var(--font-color-2);
+      background-color: var(--bg-color-2);
+    }
+
+  
+   
+  }
+ div.found_more_options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+  div.found_option{
+    min-width: 360px;
+    max-width: 400px;
+    border:2px solid var(--bg-color-2);
+    margin:auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+    -webkit-box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+    -moz-box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+ }
+ /* div.found_option * {
+  border:1px dashed var(--bg-color-2);
+ } */
+ div.found_option img {
+  /* border:2px solid var(--bg-color-2); */
+  border-radius: 50%;
+  margin-top: 20px;
+  width:120px;
+ }
+ div.found_option .teacher_photo {
+    display: inline;
+    float:inline-start;
+    padding-inline: 10px;
+ }
+ div.found_option .teacher_details {
+    display: inline;
+    margin-inline-start: 10px;
+ }
+main  p  a.link
+{
+  cursor: pointer;
+  display: block;
+  padding:20px;
+  width:200px;
+  margin: auto;
+  border-radius: 20px;
+  border:2px solid var(--bg-color-0);
+  box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+  -webkit-box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+  -moz-box-shadow: 11px 13px 36px 1px var(--bg-color-shadow);
+ }
+
+ main  p  a.link:hover {
+  box-shadow: none;
+  border:2px solid var(--bg-color-2);
+
+ }
